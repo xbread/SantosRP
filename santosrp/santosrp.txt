@@ -1,0 +1,11 @@
+"santosrp"
+{
+	"base"		"base"
+	"title"		"SantosRP"
+	"maps"		""
+	"menusystem"	"1"
+	
+	"settings"
+	{
+	}
+}

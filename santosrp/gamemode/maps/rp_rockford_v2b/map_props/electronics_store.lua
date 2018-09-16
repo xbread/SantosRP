@@ -1,0 +1,68 @@
+--[[
+	Name: electronics_store.lua
+	
+		
+]]--
+
+local MapProp = {}
+MapProp.ID = "electronics_store"
+MapProp.m_tblSpawn = {
+	{ mdl = 'models/props/cs_office/paperbox_pile_01.mdl',pos = Vector('1597.156250 3679.531250 544.500000'), ang = Angle('0.044 -89.956 -0.044'), },
+	{ mdl = 'models/sickness/shelfbase_01.mdl',pos = Vector('2004.781250 3347.468750 544.406250'), ang = Angle('0.000 0.044 -0.088'), },
+	{ mdl = 'models/props/cs_office/projector.mdl',pos = Vector('1784.062500 3348.968750 589.625000'), ang = Angle('0.264 179.912 0.000'), },
+	{ mdl = 'models/testmodels/apple_display.mdl',pos = Vector('2102.937500 3687.937500 577.875000'), ang = Angle('0.088 -90.264 -0.220'), },
+	{ mdl = 'models/testmodels/macbook_pro.mdl',pos = Vector('1619.593750 3546.968750 583.156250'), ang = Angle('-0.088 -160.356 0.000'), },
+	{ mdl = 'models/testmodels/apple_display.mdl',pos = Vector('2032.656250 3688.281250 578.156250'), ang = Angle('0.088 -90.264 -0.220'), },
+	{ mdl = 'models/props/cs_office/projector.mdl',pos = Vector('1729.625000 3348.968750 589.625000'), ang = Angle('0.264 179.912 0.000'), },
+	{ mdl = 'models/props/cs_office/projector.mdl',pos = Vector('1756.843750 3348.968750 589.625000'), ang = Angle('0.264 179.912 0.000'), },
+	{ mdl = 'models/props_wasteland/cafeteria_table001a.mdl',pos = Vector('2065.062500 3687.875000 559.593750'), ang = Angle('0.000 -90.000 0.000'), },
+	{ mdl = 'models/sickness/shelf_01.mdl',pos = Vector('1748.718750 3350.156250 582.906250'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/sickness/shelfbase_01.mdl',pos = Vector('1743.843750 3347.593750 544.218750'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/props_interiors/phone.mdl',pos = Vector('1998.343750 3354.281250 550.968750'), ang = Angle('0.132 89.253 0.044'), },
+	{ mdl = 'models/props/cs_office/radio.mdl',pos = Vector('1847.531250 3351.218750 589.531250'), ang = Angle('0.000 45.000 0.000'), },
+	{ mdl = 'models/props/cs_office/radio.mdl',pos = Vector('1875.062500 3351.218750 589.531250'), ang = Angle('0.000 45.000 0.000'), },
+	{ mdl = 'models/props/cs_office/radio.mdl',pos = Vector('1902.625000 3351.218750 589.531250'), ang = Angle('0.000 45.000 0.000'), },
+	{ mdl = 'models/props_lab/monitor02.mdl',pos = Vector('1702.718750 3350.593750 550.593750'), ang = Angle('-0.483 89.780 -0.615'), },
+	{ mdl = 'models/sickness/shelf_01.mdl',pos = Vector('1879.156250 3350.156250 582.906250'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/sickness/shelfbase_01.mdl',pos = Vector('2135.343750 3347.593750 544.218750'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/props_wasteland/controlroom_desk001b.mdl',pos = Vector('1831.656250 3686.437500 560.812500'), ang = Angle('-0.352 -90.000 0.000'), },
+	{ mdl = 'models/sickness/shelf_01.mdl',pos = Vector('2009.562500 3350.156250 582.906250'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/testmodels/apple_display.mdl',pos = Vector('1975.625000 3351.406250 592.562500'), ang = Angle('0.000 90.000 0.000'), },
+	{ mdl = 'models/testmodels/apple_display.mdl',pos = Vector('2032.875000 3351.406250 592.562500'), ang = Angle('0.000 90.000 0.000'), },
+	{ mdl = 'models/testmodels/macbook_pro.mdl',pos = Vector('2095.468750 3349.406250 589.468750'), ang = Angle('0.000 89.604 -0.044'), },
+	{ mdl = 'models/testmodels/macbook_pro.mdl',pos = Vector('2137.187500 3349.125000 589.468750'), ang = Angle('0.000 89.604 -0.044'), },
+	{ mdl = 'models/testmodels/macbook_pro.mdl',pos = Vector('2178.906250 3348.843750 589.500000'), ang = Angle('0.000 89.604 -0.044'), },
+	{ mdl = 'models/props_interiors/phone.mdl',pos = Vector('1957.687500 3354.812500 551.031250'), ang = Angle('0.132 89.253 0.044'), },
+	{ mdl = 'models/props_unique/coffeemachine01.mdl',pos = Vector('1830.375000 3695.218750 577.000000'), ang = Angle('-0.396 -89.517 0.483'), },
+	{ mdl = 'models/props_unique/coffeemachine01.mdl',pos = Vector('1792.375000 3694.875000 576.687500'), ang = Angle('-0.396 -89.517 0.483'), },
+	{ mdl = 'models/props_unique/coffeemachine01.mdl',pos = Vector('1849.375000 3695.375000 577.156250'), ang = Angle('-0.396 -89.517 0.483'), },
+	{ mdl = 'models/props/cs_office/tv_plasma.mdl',pos = Vector('1834.843750 3707.593750 624.937500'), ang = Angle('0.000 -90.000 0.000'), },
+	{ mdl = 'models/props_interiors/desk_executive.mdl',pos = Vector('1626.687500 3527.812500 544.562500'), ang = Angle('0.000 180.000 0.000'), },
+	{ mdl = 'models/freeman/ventfan.mdl',pos = Vector('2178.562500 3352.625000 566.718750'), ang = Angle('-0.264 90.044 0.000'), },
+	{ mdl = 'models/props_interiors/pot01a.mdl',pos = Vector('1785.843750 3678.656250 583.062500'), ang = Angle('-0.571 -106.567 0.044'), },
+	{ mdl = 'models/freeman/ventfan.mdl',pos = Vector('2135.250000 3352.593750 566.718750'), ang = Angle('-0.264 90.044 0.000'), },
+	{ mdl = 'models/props_lab/monitor01a.mdl',pos = Vector('1731.812500 3350.750000 563.593750'), ang = Angle('-0.044 90.000 -0.044'), },
+	{ mdl = 'models/props/cs_office/tv_plasma.mdl',pos = Vector('1770.343750 3707.593750 654.125000'), ang = Angle('0.000 -90.000 0.000'), },
+	{ mdl = 'models/freeman/ventfan.mdl',pos = Vector('2091.937500 3352.562500 566.718750'), ang = Angle('-0.264 90.044 0.000'), },
+	{ mdl = 'models/props_interiors/phone.mdl',pos = Vector('2059.312500 3353.468750 550.906250'), ang = Angle('0.132 89.253 0.044'), },
+	{ mdl = 'models/props_c17/consolebox05a.mdl',pos = Vector('1833.000000 3354.937500 550.812500'), ang = Angle('-0.483 179.824 0.132'), },
+	{ mdl = 'models/sickness/shelf_01.mdl',pos = Vector('2140.000000 3350.187500 582.906250'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/props_lab/monitor01b.mdl',pos = Vector('1779.187500 3350.375000 556.250000'), ang = Angle('-7.734 90.176 -0.176'), },
+	{ mdl = 'models/props_c17/consolebox03a.mdl',pos = Vector('1873.031250 3353.000000 550.656250'), ang = Angle('0.176 90.571 -0.352'), },
+	{ mdl = 'models/props_interiors/phone.mdl',pos = Vector('1978.031250 3354.562500 551.000000'), ang = Angle('0.132 89.253 0.044'), },
+	{ mdl = 'models/props_interiors/phone.mdl',pos = Vector('2018.656250 3354.000000 550.968750'), ang = Angle('0.132 89.253 0.044'), },
+	{ mdl = 'models/props_c17/tv_monitor01.mdl',pos = Vector('1909.500000 3353.656250 558.718750'), ang = Angle('-0.396 88.857 0.000'), },
+	{ mdl = 'models/props_unique/coffeemachine01.mdl',pos = Vector('1868.375000 3695.562500 577.312500'), ang = Angle('-0.396 -89.517 0.483'), },
+	{ mdl = 'models/props_interiors/phone.mdl',pos = Vector('2039.000000 3353.750000 550.937500'), ang = Angle('0.132 89.253 0.044'), },
+	{ mdl = 'models/props/cs_office/tv_plasma.mdl',pos = Vector('1900.312500 3707.593750 655.718750'), ang = Angle('0.000 -90.000 0.000'), },
+	{ mdl = 'models/props/cs_militia/television_console01.mdl',pos = Vector('1614.656250 3364.875000 544.218750'), ang = Angle('0.000 90.000 0.000'), },
+	{ mdl = 'models/sickness/shelfbase_01.mdl',pos = Vector('1874.343750 3347.593750 544.218750'), ang = Angle('0.000 0.000 0.000'), },
+	{ mdl = 'models/props/cs_office/radio.mdl',pos = Vector('1819.968750 3351.218750 589.531250'), ang = Angle('0.000 45.000 0.000'), },
+	{ mdl = 'models/props_lab/reciever01b.mdl',pos = Vector('1758.875000 3354.593750 554.062500'), ang = Angle('-0.571 88.550 -0.044'), },
+	{ mdl = 'models/props_lab/monitor01b.mdl',pos = Vector('1798.218750 3350.500000 556.250000'), ang = Angle('-7.822 88.682 0.088'), },
+	{ mdl = 'models/props/cs_office/projector.mdl',pos = Vector('1702.406250 3348.968750 589.625000'), ang = Angle('0.264 179.912 0.000'), },
+	{ mdl = 'models/props_interiors/cashregister01.mdl',pos = Vector('1613.781250 3498.718750 582.968750'), ang = Angle('-0.220 159.521 -0.044'), },
+	{ mdl = 'models/props_unique/coffeemachine01.mdl',pos = Vector('1811.375000 3695.062500 576.843750'), ang = Angle('-0.396 -89.517 0.483'), },
+}
+
+GAMEMODE.Map:RegisterMapProp( MapProp )
