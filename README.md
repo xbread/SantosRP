@@ -4,3 +4,7 @@ An open sourced version of santos since the official one is gone I have decided 
 
 # Documentation help
 Click the WIKI on the top to view documentation 
+
+
+# ✨Contributors ✨  
+to be added
