@@ -4,7 +4,7 @@
 	By: TalosLife
 ]]--
 
-GM.Name 	= "Siege Roleplay"
+GM.Name 	= "SantosRP
 GM.Author 	= "Ultra"
 GM.Email 	= "ultraminge@gmail.com"
 GM.Website 	= ""
