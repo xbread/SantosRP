@@ -4,17 +4,24 @@
 	By: TalosLife
 ]]--
 
+-- --------------------------
+-- SQL SETUP
+-- --------------------------
+--[[ 
+requirements: tmysql & a webserver w/ databases 
+]]--
+
 --[[ SQL Settings ]]--
 if DEV_SERVER then
-	GM.Config.SQLHostName = "#"
-	GM.Config.SQLUserName = "#"
-	GM.Config.SQLPassword = "#"
-	GM.Config.SQLDBName = "#"
+	GM.Config.SQLHostName = "#" -- Host name i.e localhost
+	GM.Config.SQLUserName = "#" -- Username i.e bread
+	GM.Config.SQLPassword = "#" -- Password i.e password
+	GM.Config.SQLDBName = "#"   -- DB Name  i.e dbname_name
 else
-	GM.Config.SQLHostName = "#"
-	GM.Config.SQLUserName = "#"
-	GM.Config.SQLPassword = "#"
-	GM.Config.SQLDBName = "#"
+	GM.Config.SQLHostName = "#" -- Host name i.e localhost
+	GM.Config.SQLUserName = "#" -- Username i.e bread
+	GM.Config.SQLPassword = "#" -- Password i.e password
+	GM.Config.SQLDBName = "#"   -- DB Name  i.e dbname_name
 	end
 
 GM.Config.SQLSnapshotRate = 5 *60 --Lower = less time between updates to sql. This value should be set with respect to the number of workers in use!
