@@ -3,7 +3,7 @@ An open sourced version of santos since the official one is gone I have decided 
 
 
 # Documentation help
-Click the [WIKI](https://github.com/xbread/Open-Source-Santos/wiki) on the top to view documentation 
+The WIKI is still being developed but it can be viewed [here](https://github.com/xbread/Open-Source-Santos/wiki)
 
 
 # ✨Contributors ✨  
