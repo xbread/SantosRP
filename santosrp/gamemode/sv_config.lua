@@ -12,6 +12,22 @@ requirements: tmysql & a webserver w/ databases
 ]]--
 
 --[[ SQL Settings ]]--
+
+--[[ errors?
+	- make sure you have the correct version of tmysql that corresponds with your servers operating system
+	- allow exteranl connections (if not done by default ask an administrator on your website) 
+
+	examples:
+	 - [hostname]: 127.0.0.1 or geteden.us <- custom domain
+	 - [username]: bread
+	 - [password]: advancedDataBasE@@passWorD
+	 - [db name ]: geteden_santos 
+
+	need help open up a support ticket on github (https://github.com/xbread/Open-Source-Santos/issues)
+
+	
+--]]
+
 if DEV_SERVER then
 	GM.Config.SQLHostName = "#" -- Host name i.e localhost
 	GM.Config.SQLUserName = "#" -- Username i.e bread
