@@ -28,6 +28,8 @@ requirements: tmysql & a webserver w/ databases
 	
 --]]
 
+DEV_SERVER = false
+
 if DEV_SERVER then
 	GM.Config.SQLHostName = "#" -- Host name i.e localhost
 	GM.Config.SQLUserName = "#" -- Username i.e bread
