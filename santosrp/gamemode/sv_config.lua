@@ -4,16 +4,11 @@
 	By: TalosLife
 ]]--
 
--- --------------------------
--- SQL SETUP
--- --------------------------
---[[ 
-requirements: tmysql & a webserver w/ databases 
-]]--
-
---[[ SQL Settings ]]--
-
+ 
+ 
 --[[ errors?
+	- make sure you have tmysql installed
+	- make sure you have a website that allows database creations
 	- make sure you have the correct version of tmysql that corresponds with your servers operating system
 	- allow exteranl connections (if not done by default ask an administrator on your website) 
 
