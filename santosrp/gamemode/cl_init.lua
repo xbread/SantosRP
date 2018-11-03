@@ -1,9 +1,3 @@
---[[
-	Name: cl_init.lua
-	For: TalosLife
-	By: TalosLife
-]]--
-
 include "sh_init.lua"
 gameevent.Listen "player_disconnect"
 
@@ -19,7 +13,7 @@ function GM:Load()
 	RunConsoleCommand( "gmod_mcore_test", 1 )
 	RunConsoleCommand( "mat_aaquality", -1 )
 	RunConsoleCommand( "cl_threaded_bone_setup", 1 )
-
+	
 	self.Map:Load()
 	self.Inv:LoadItems()
 	self.Property:LoadProperties()
@@ -113,7 +107,7 @@ function GM:Think()
 	self.PacModels:UpdatePlayers()
 	self.PlayerAnims:ThinkPlayerBones()
 	self.Weather:Think()
-
+	
 	if input.IsKeyDown( KEY_P ) and not vgui.CursorVisible() and not LocalPlayer():GetNWBool( "SeatBelt" ) then
 		LocalPlayer():ConCommand( "rp_seatbelt" )
 	end
@@ -149,7 +143,7 @@ function GM:PostDrawViewModel( vm, pl, wep )
 		local hands = LocalPlayer():GetHands()
 		if IsValid( hands ) then hands:DrawModel() end
 	end
-
+	
 	if wep.PostDrawViewModel then return wep:PostDrawViewModel( vm, pl,wep ) end
 end
 
