@@ -1,3 +1,7 @@
+--[[
+ Note: fire system causes crash when a ragdoll is thrown in
+]]
+
 GM.FireSystem = {}
 GM.FireSystem.m_tblCellGraph = {}
 GM.FireSystem.m_intNodeCount = GM.Config.FireNodeCount
@@ -11,14 +15,14 @@ GM.FireSystem.m_intMaxFires = GM.Config.MaxFires
 GM.FireSystem.m_intMaxChildren = GM.Config.MaxChildFires
 GM.FireSystem.m_bBurnAll = GM.Config.FireBurnEverything
 GM.FireSystem.m_matBurnable = {
-	[MAT_FLESH] = true,
+	[MAT_FLESH] = false,
 	[MAT_DIRT] = true,
 	[MAT_WOOD] = true,
 	[MAT_GRASS] = true,
 	[MAT_EGGSHELL] = true,
 	[MAT_PLASTIC] = true,
 	[MAT_ALIENFLESH] = true,
-	[MAT_BLOODYFLESH] = true,
+	[MAT_BLOODYFLESH] = false,
 	[MAT_TILE] = true
 }
 
@@ -32,7 +36,7 @@ end
 
 function GM.FireSystem:Tick()
 	if not GAMEMODE.Config.AutoFiresEnabled then return end
-	
+
 	if not self.m_intLastAutoFire then
 		self.m_intLastAutoFire = CurTime() +math.random( GAMEMODE.Config.AutoFireSpawnMinTime, GAMEMODE.Config.AutoFireSpawnMaxTime )
 	end
@@ -217,7 +221,7 @@ function GM.FireSystem:IterateChildren( tblNode, bOnlyUpdate )
 				tblNode.Nodes[nodeID] = nil
 			end
 		end
-		
+
 		if not bOnlyUpdate and IsValid( tblNode.Fire ) and self:ValidNodePosition( tblNode.Pos, self.m_tblSpreadDirs[nodeID] ) then
 			if self.m_intCurSpreadCount >= self.m_intSpreadCount then
 				self.m_intCurSpreadCount = 0
@@ -315,7 +319,7 @@ end
 
 concommand.Add( "srp_dev_clear_fire", function( pPlayer )
 	if IsValid( pPlayer ) and not pPlayer:IsSuperAdmin() then return end
-	
+
 	for k, v in pairs( ents.FindByClass("ent_fire") ) do
 		if not IsValid( v) then continue end
 		v:Remove()
