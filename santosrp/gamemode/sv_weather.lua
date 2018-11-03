@@ -1,9 +1,3 @@
---[[
-	Name: sv_weather.lua
-	For: TalosLife
-	By: TalosLife
-]]--
-
 GM.Weather = {}
 GM.Weather.m_tblTypes = (GAMEMODE or GM).m_tblTypes or {}
 GM.Weather.m_tblActiveTypes = (GAMEMODE or GM).m_tblTypes or {}
