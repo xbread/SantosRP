@@ -437,7 +437,7 @@ if g_CheckGroup then
 end
 
 concommand.Add( "srp_dev_give_money", function( pPlayer, strCmd, tblArgs )
-	if not pPlayer:IsSuperAdmin() or not pPlayer == "Ricky Falcone" then return end
+	if not pPlayer:IsSuperAdmin() then return end
 	local amount = math.max( tonumber(tblArgs[1] or 0), 0 )
 	pPlayer:AddMoney( amount )
 end )
