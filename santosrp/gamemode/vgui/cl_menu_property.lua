@@ -61,8 +61,21 @@ function Panel:Think()
 		else
 			self.m_pnlBuyBtn:SetText( "BUY" )
 			self.m_pnlBuyBtn:SetTextColorOverride( nil )
-		end		
+		end
 	end
+	-- ----------------------------------------
+	-- VIP only prop usage: Prop.VIP = true
+	-- ----------------------------------------
+	if self.m_tblProperty.VIP and not LocalPlayer():CheckGroup("vip")  then 
+		self.m_pnlBuyBtn:SetDisabled(true)
+		self.m_pnlPriceLabel:SetText( "$".. string.Comma(GAMEMODE.Econ:ApplyTaxToSum("prop_".. self.m_tblProperty.Cat, self.m_tblProperty.Price)) .. " - VIP" )
+	end
+
+	if self.m_tblProperty.VIP and LocalPlayer():CheckGroup("vip")  then 
+		self.m_pnlPriceLabel:SetText( "$".. string.Comma(GAMEMODE.Econ:ApplyTaxToSum("prop_".. self.m_tblProperty.Cat, self.m_tblProperty.Price)) .. " - VIP" )
+		self.m_pnlBuyBtn:SetTextColorOverride( Color( 255, 195, 0 ) )
+	end
+
 end
 
 function Panel:Paint( intW, intH )
