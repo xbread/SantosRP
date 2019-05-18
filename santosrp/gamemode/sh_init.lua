@@ -4,7 +4,7 @@
 	By: TalosLife
 ]]--
 
-GM.Name 	= "SantosRP
+GM.Name 	= "SantosRP"
 GM.Author 	= "Ultra"
 GM.Email 	= "ultraminge@gmail.com"
 GM.Website 	= ""
