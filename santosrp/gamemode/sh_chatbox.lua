@@ -1,7 +1,7 @@
 ----------------------------------------------
 -----------JChat by JohnnyThunders------------ 
 ----------------------------------------------
---[[
+
 if JChat then return end
 JChat = JChat or {} --Let's prevent any breaking.
 --Various data 
