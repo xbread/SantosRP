@@ -88,6 +88,8 @@ NPCMeta.ItemsForSale = {
 	["Cheese"] = 2,
 	["Lettuce"] = 7,
 	["Box of Flour"] = 10,
+	-- cocaine stuff
+	["Baking soda"] = 34,
 }
 
 --[itemID] = priceToSell,
