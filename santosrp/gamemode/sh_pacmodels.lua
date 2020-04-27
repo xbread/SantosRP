@@ -84,7 +84,7 @@ if CLIENT then
 	end )
 
 	function GM.PacModels:InvalidatePlayerOutfits( pPlayer, entWepSwitchTo )
-		for k, v in pairs( pPlayer.pac_parts or {} ) do
+		for k, v in pairs( pPlayer.pac_outfits or {} ) do
 			v:Remove()
 		end
 
