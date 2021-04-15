@@ -4,6 +4,7 @@
 	"title"		"SantosRP"
 	"maps"		""
 	"menusystem"	"1"
+	"category"      "rp"
 	
 	"settings"
 	{
