@@ -30,7 +30,7 @@ NPCMeta.ItemsForSale = {
     ["Cannabis Seeds (High Quality)"] = 80,
     ["Cannabis (Low Quality)"] = 100,
     ["Phenylacetic Acid"] = 35,
-    ["Methamphetamine (Low Quality)"] = 190
+    ["Methamphetamine (Low Quality)"] = 190,
     ["Cocaine Leaves"] = 200,
 }
 
@@ -42,7 +42,7 @@ NPCMeta.ItemsCanBuy = {
     ["Moonshine"] = 50,
     ["Methamphetamine (Low Quality)"] = 125,
     ["Methamphetamine (Medium Quality)"] = 325,
-    ["Methamphetamine (High Quality)"] = 500
+    ["Methamphetamine (High Quality)"] = 500,
     ["Cocaine (Low Quality)"] = 450,
     ["Cocaine (Medium Quality)"] = 980,
     ["Cocaine (High Quality)"] = 1600,
