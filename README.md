@@ -1,10 +1,11 @@
 # SantosRP
-This repo contains all content, files, materials and more to run your own SantosRP server no suppor twill be given beyond what is already shown in the files. 
+This repo contains all content, files, materials and more to run your own SantosRP server no support will be given beyond what is already shown in the files. 
 As of 4/10/2024 the gamemode fully works with no issues as long as you follow the setup instructions correctly.
 
 # Setup Help
  All setup information can be found in sv_config.lua
- ## sv_config.lua:
+ 
+sv_config.lua:
  ```
  errors?
 	- make sure you have tmysql installed
