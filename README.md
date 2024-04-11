@@ -21,3 +21,6 @@ sv_config.lua:
 
 	need help open up a support ticket on github (https://github.com/xbread/Open-Source-Santos/issues)
 ```
+
+# Workshop/Materials Setup 
+The previous linked workshop content has been taken down although, I am sure you can look up SantosRP content in the Garry's Mod workshop and find something that will suit your needs. Just extract the workshop content and figure out what it is you need exactly.
